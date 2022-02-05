@@ -119,3 +119,64 @@ Note: You are not allowed to use any built-in exponent function or operator, suc
 //     return i - 1
 // }
 // console.log(mysqrt(4))
+
+// 704. Binary Search
+
+/*
+Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search target in nums. If target exists, then return its index. Otherwise, return -1.
+
+You must write an algorithm with O(log n) runtime complexity.
+*/
+
+// const search = (nums, target) => {
+//     let min = 0;
+//     let max = nums.length - 1;
+//     while (min <= max) {
+//         let mid = Math.floor((min + max) / 2);
+
+//         if (nums[mid] === target) {
+//             return mid;
+//         }
+//         if (nums[mid] > target) {
+//             max = mid - 1;
+//         }
+//         else {
+//             min = mid + 1;
+//         }
+
+//     }
+//     return -1
+// }
+
+// console.log(search([-1, 0, 3, 5, 9, 12], 9))
+
+// 278. First Bad Version
+/*
+You are a product manager and currently leading a team to develop a new product. Unfortunately, the latest version of your product fails the quality check. Since each version is developed based on the previous version, all the versions after a bad version are also bad.
+
+Suppose you have n versions [1, 2, ..., n] and you want to find out the first bad one, which causes all the following ones to be bad.
+
+You are given an API bool isBadVersion(version) which returns whether version is bad. Implement a function to find the first bad version. You should minimize the number of calls to the API.
+*/
+
+// const solution = (isBadVersion) => {
+
+//     return function (n) {
+//         let start = 1;
+//         let end = n;
+
+//         while (start <= end) {
+//             let mid = Math.floor((start + end) / 2);
+//             if (isBadVersion(mid)) {
+//                 end = mid - 1;
+//             }
+//             else {
+//                 start = mid + 1;
+//             }
+//         }
+//         return start;
+//     };
+// };
+
+// console.log(solution(3)(5))
+
