@@ -180,3 +180,26 @@ You are given an API bool isBadVersion(version) which returns whether version is
 
 // console.log(solution(3)(5))
 
+
+// 125. Valid Palindrome
+/*
+A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
+
+Given a string s, return true if it is a palindrome, or false otherwise.
+*/
+
+// const isPalindrome = (s) => {
+//     const regex = /[^A-Za-z0-9]/g;
+//     const reverse = s.replace(regex, "").split("").reverse().join("").toLowerCase()
+
+//     if (typeof (s) !== "string") {
+//         alert("Please enter a string")
+//     }
+//     if (s.length === 0) {
+//         alert("Nothing to check")
+//     }
+//     if (reverse === s.replace(regex, "").toLowerCase()) return true;
+//     return false
+// }
+
+// console.log(isPalindrome("A man, a plan, a canal: Panama"))
