@@ -203,3 +203,37 @@ Given a string s, return true if it is a palindrome, or false otherwise.
 // }
 
 // console.log(isPalindrome("A man, a plan, a canal: Panama"))
+
+
+// 242. Valid Anagram
+
+/*
+Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+
+An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+*/
+
+// const anagram = (s, t) => {
+//     const sMap = checkValue(s);
+//     const tMap = checkValue(t);
+//     if (Object.keys(sMap).length !== Object.keys(tMap).length) {
+//         return false;
+//     }
+//     for (let char in sMap) {
+//         if (sMap[char] !== tMap[char]) {
+//             return false;
+//         }
+//     }
+//     return true;
+
+// }
+
+// const checkValue = s => {
+//     const charMap = {};
+//     for (let char of s) {
+//         charMap[char] ? charMap[char]++ : charMap[char] = 1;
+//     }
+//     return charMap
+// }
+
+// console.log(anagram("anagram", "nagaram"))
