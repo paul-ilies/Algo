@@ -237,3 +237,25 @@ An Anagram is a word or phrase formed by rearranging the letters of a different 
 // }
 
 // console.log(anagram("anagram", "nagaram"))
+
+
+/*
+Codewars
+In this example you have to validate if a user input string is alphanumeric. The given string is not nil/null/NULL/None, so you don't have to check that.
+
+The string has the following conditions to be alphanumeric:
+
+At least one character ("" is not valid)
+Allowed characters are uppercase / lowercase latin letters and digits from 0 to 9
+No whitespaces / underscore
+*/
+
+// const alphanumeric = (string) => {
+//     const regex = /[^A-Za-z0-9]/g;
+//     const newString = string.replace(regex, "");
+//     if (string === "") return false
+//     if (newString.length === string.length) return true
+//     return false
+// }
+
+// console.log(alphanumeric("hello world_"))
