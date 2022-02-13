@@ -306,3 +306,36 @@ answer[i] == i (as a string) if none of the above conditions are true.
 // }
 
 // console.log(factorial(3))
+
+
+/*
+ISBN-10 identifiers are ten digits long. The first nine characters are digits 0-9. The last digit can be 0-9 or X, to indicate a value of 10.
+
+An ISBN-10 number is valid if the sum of the digits multiplied by their position modulo 11 equals zero.
+
+*/
+
+// const validISBN10 = (isbn) => {
+//     const isbnArr = [...isbn];
+//     let temp = 0;
+//     let total = 0;
+//     if (isbnArr.length !== 10) {
+//         return false
+//     }
+//     if (isbnArr[isbnArr.length - 1] === "X") {
+//         isbnArr.pop()
+//         temp = 10 * 10
+//     }
+
+//     for (let i = 0; i < isbnArr.length; i++) {
+//         total += ((i + 1) * isbnArr[i])
+//     }
+
+//     if ((total + temp) % 11 === 0) {
+//         return true
+//     }
+//     return false
+
+// }
+
+// console.log(validISBN10("1234512345"))
