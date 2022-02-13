@@ -295,3 +295,14 @@ answer[i] == i (as a string) if none of the above conditions are true.
 // };
 
 // console.log(fizzBuzz(3))
+
+// Factorial
+// const factorial = (n) => {
+//     if (n === 0) {
+//         return 1;
+//     }
+
+//     return n * factorial(n - 1)
+// }
+
+// console.log(factorial(3))
