@@ -339,3 +339,29 @@ An ISBN-10 number is valid if the sum of the digits multiplied by their position
 // }
 
 // console.log(validISBN10("1234512345"))
+
+
+/*
+Write a function named first_non_repeating_letter that takes a string input, and returns the first character that is not repeated anywhere in the string.
+
+For example, if given the input 'stress', the function should return 't', since the letter t only occurs once in the string, and occurs first in the string.
+
+As an added challenge, upper- and lowercase letters are considered the same character, but the function should return the correct case for the initial letter. For example, the input 'sTreSS' should return 'T'.
+
+If a string contains all repeating characters, it should return an empty string ("") or None -- see sample tests.
+*/
+// const firstNonRepeatingLetter = s => {
+//     const obj = {};
+//     const arr = []
+//     const newS = s.split("")
+
+//     for (let char of s.toLowerCase()) {
+//         obj[char] ? obj[char]++ : obj[char] = 1;
+//     }
+//     for (let char in obj) {
+//         obj[char] === 1 ? arr.push(char) : null
+//     }
+//     return newS.find(el => el.toLowerCase() === arr[0])
+// }
+
+// console.log(firstNonRepeatingLetter("sTreSS"))
