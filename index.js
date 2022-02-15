@@ -365,3 +365,29 @@ If a string contains all repeating characters, it should return an empty string 
 // }
 
 // console.log(firstNonRepeatingLetter("sTreSS"))
+
+
+// --- Directions
+// Given a string, return the character that is most
+// commonly used in the string.
+// --- Examples
+// maxChar("abcccccccd") === "c"
+// maxChar("apple 1231111") === "1"
+
+// const maxChar = (str) => {
+//     const charMap = {};
+//     let result = "";
+//     let count = 0;
+//     for (let char of str) {
+//         charMap[char] ? charMap[char]++ : charMap[char] = 1;
+//     }
+//     for (let char in charMap) {
+//         if (count < charMap[char]) {
+//             count = charMap[char];
+//             result = char;
+//         }
+//     }
+//     return result;
+// }
+
+// console.log(maxChar("abcccccccd"))
