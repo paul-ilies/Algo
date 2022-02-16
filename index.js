@@ -415,4 +415,19 @@ If a string contains all repeating characters, it should return an empty string 
 // console.log(fib(4))
 
 
+// function fib2(n) {
+
+//     const arr = [0, 1]
+//     for (let i = 2; i <= n; i++) {
+//         const a = arr[arr.length - 1]
+//         const b = arr[arr.length - 2]
+//         arr.push(a + b);
+//     }
+//     return arr[n]
+
+// }
+
+// console.log(fib2(4))
+
+
 
