@@ -538,6 +538,15 @@ Depending on your language, the stack may not be supported natively. You may sim
 //     }
 // };
 
+// First letter uppercase
 
-
+// const firstLetterUpper = (string) => {
+//     return string
+//         .split(" ")
+//         .map(el => {
+//             return el[0].toUpperCase() + el.slice(1)
+//         })
+//         .join(" ")
+// }
+// console.log(firstLetterUpper("hello beautiful world"))
 
