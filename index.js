@@ -550,3 +550,28 @@ Depending on your language, the stack may not be supported natively. You may sim
 // }
 // console.log(firstLetterUpper("hello beautiful world"))
 
+
+// The maximum sum subarray problem consists in finding the maximum sum of a contiguous subsequence in an array or list of integers:
+
+const maxSequence = arr => {
+    let max = 0;
+    let currentSum = 0;
+    if (!arr.length) return 0;
+    for (let i = 0; i < arr.length; i++) {
+        currentSum += arr[i];
+        if (currentSum > max) {
+            max = currentSum
+        }
+        if (currentSum < 0) {
+            currentSum = 0
+        }
+    }
+
+    return max
+
+}
+
+console.log(maxSequence([-1, -6, -3, 8]))
+
+
+
