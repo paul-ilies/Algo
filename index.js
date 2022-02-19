@@ -553,25 +553,47 @@ Depending on your language, the stack may not be supported natively. You may sim
 
 // The maximum sum subarray problem consists in finding the maximum sum of a contiguous subsequence in an array or list of integers:
 
-const maxSequence = arr => {
-    let max = 0;
-    let currentSum = 0;
-    if (!arr.length) return 0;
-    for (let i = 0; i < arr.length; i++) {
-        currentSum += arr[i];
-        if (currentSum > max) {
-            max = currentSum
-        }
-        if (currentSum < 0) {
-            currentSum = 0
-        }
-    }
+// const maxSequence = arr => {
+//     let max = 0;
+//     let currentSum = 0;
+//     if (!arr.length) return 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         currentSum += arr[i];
+//         if (currentSum > max) {
+//             max = currentSum
+//         }
+//         if (currentSum < 0) {
+//             currentSum = 0
+//         }
+//     }
 
-    return max
+//     return max
 
-}
+// }
 
-console.log(maxSequence([-1, -6, -3, 8]))
+// console.log(maxSequence([-1, -6, -3, 8]))
+
+// Move first letter of each word at the end of it and add "snow"
+// Punctuation is the same
+// Ex: Make your life easier, create a dashboard! ->
+
+//     akeMsnow ourysnow ifelsnow asieresnow, reatecsnow asnow ashboarddsnow!
+
+// const changeString = str => {
+//     const regex = /[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/g;
+//     return str.split(" ").map(el => {
+//         const firstLetter = el[0];
+//         if (el[el.length - 1].match(regex)) {
+//             const lastLetter = el[el.length - 1];
+//             return el.slice(1, -1) + firstLetter + "snow" + lastLetter;
+//         }
+//         else {
+//             return el.slice(1) + firstLetter + "snow"
+//         }
+//     }).join(" ")
+// }
+
+// console.log(changeString("Make your life easier, create a dashboard!"))
 
 
 
