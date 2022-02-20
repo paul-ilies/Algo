@@ -596,4 +596,26 @@ Depending on your language, the stack may not be supported natively. You may sim
 // console.log(changeString("Make your life easier, create a dashboard!"))
 
 
+// Return the word with the highest rank {a:1,b:2 etc}
 
+
+// const checkHigherWord = str => {
+//     const result = {}
+//     let higherNum = 0;
+//     let word = ""
+//     for (let char of str.toLowerCase().split(" ").map(el => el.replace(/[^A-Za-z0-9]/g, ""))) {
+//         let sum = 0;
+//         for (let i = 0; i < char.length; i++) {
+//             sum += parseInt(char[i], 36) - 9
+//         }
+//         result[char] = sum
+//     }
+//     for (let [key, value] of Object.entries(result)) {
+//         if (higherNum < value) {
+//             higherNum = value;
+//             word = key
+//         }
+//     }
+//     return word
+// }
+// console.log(checkHigherWord("So employees can be productive, wherever they are.And customers can get what they need,when they need it."))
